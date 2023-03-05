@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes bouncing{
+    0%{
+        transform: translateY(0px);
+        width: 150px;
+        height: 50px;
+    }
+   
+    20%{
+        transform: translateY(-60px);
+        width: 120px;
+        height: 80px;
+
+    }
+    25%{
+        transform: translateY(-130px);
+        width: 100px;
+        height: 100px;
+
+    }
+    40%{
+        transform: translateY(-170px);
+        width: 100px;
+        height: 100px;
+
+    }
+    50%{
+        
+        transform: translateY(-200px);
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 252, 52);
+        
+    }
+    70%{
+        transform: translateY(-170px);
+        width: 100px;
+        height: 100px;
+    }
+    85%{
+        transform: translateY(-20px);
+        width: 100px;
+        height: 100px;
+    
+    }
+    100%{
+        transform: translateY(0px);
+        width: 150px;
+        height: 50px;
+       
+    }
+}
+.ball{
+    /* height: 100px;
+    width: 100px; */
+    background-color: white;
+    border-radius: 50%;
+    animation-name: bouncing;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
